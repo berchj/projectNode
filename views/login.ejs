@@ -1,0 +1,15 @@
+<div class="login">
+<%- include('./partials.ejs/header')%>
+<% if(message && message.length > 0) {%>
+    <h4><%=message%></h4>
+<% } %>
+<form action="/loged" method="POST">
+    <fieldset>            
+        <label for="email">Email</label>
+        <input type="email" name="email" id="">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="">
+        <input type="submit" value="log in">
+    </fieldset>
+</form>
+</div>

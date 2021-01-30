@@ -1,0 +1,18 @@
+<div class="sign-in">
+    <%- include('./partials.ejs/header')%>  
+    <% if (message && message.length > 0) { %>
+        <h4><span class="icon-info"></span>
+          <%=message%></h4>
+        <% } %>        
+    <form action="/registred" method="POST">
+        <fieldset>            
+            <label for="user">Username</label>
+            <input type="text" name="username" id="">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="">
+            <input type="submit" value="sign in">
+        </fieldset>
+    </form> 
+</div>

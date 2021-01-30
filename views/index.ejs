@@ -1,0 +1,17 @@
+<div class="dashboard">
+    <%- include('./partials.ejs/header')%>
+    <section>
+        <ul class="posts">
+            <%for ( let i = 0; i < data.length; i++) {%>
+            <li>
+                <article>
+                    <ul>
+                        <li><a href="details/id?=<%=data[i].id%>"><%=data[i].titulo%></a></li>
+                        <li><%=data[i].fecha_hora%></li>
+                    </ul>
+                </article>
+            </li>    
+            <% } %>            
+        </ul>
+    </section>
+</div>
