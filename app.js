@@ -86,7 +86,7 @@ app.post('/loged',(req,res)=>{
                 res.redirect('/private/private_index')
             }
         })
-        connection.release()
+        connection.release() 
     })
 })
 
